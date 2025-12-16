@@ -28,7 +28,11 @@ The goal is simple:
   - Recursion
   - Linked List
   - Stack & Queue
+  - Map
+  - Set
+  - Greedy
   - Trees & Graphs
+  - Tries
   - Dynamic Programming
 - ✅ Clean & optimized solutions
 - ✅ Notes & approaches (when needed)
@@ -38,10 +42,17 @@ The goal is simple:
 Code-Every-Day/
 │
 ├── Arrays/
+├── Hashing/
+├── Binary Search/
 ├── Strings/
+├── Two Pointers/
+├── Sliding Window/
 ├── LinkedList/
 ├── Stack-Queue/
 ├── Trees/
+├── Heap-PriorityQueue/
+├── Greedy/
+├── Backtracking/
 ├── Graphs/
 ├── Dynamic-Programming/
 └── README.md
@@ -50,8 +61,8 @@ Code-Every-Day/
 ---
 
 ## 🛠️ Languages Used  
-- C / C++
-- Python
+- C++
+- Java
 - JavaScript (where applicable)
 
 ---
