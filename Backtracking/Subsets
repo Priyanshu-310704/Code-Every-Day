@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+#include<vector>
+class Solution {
+public:
+    void getSubset(int idx,vector<vector<int>>&ans,vector<int>&v,vector<int>&nums){
+        ans.push_back(v);
+        for(int i=idx;i<nums.size();i++){
+            v.push_back(nums[i]);
+            getSubset(i+1,ans,v,nums);
+            v.pop_back();
+        }
+    }
+    vector<vector<int>> subsets(vector<int>& nums) {
+        vector<vector<int>> ans;
+        vector<int> v;
+        getSubset(0,ans,v,nums);
+        return ans;
+    }
+};
