@@ -68,7 +68,7 @@ Code-Every-Day/
 ---
 
 ## 📈 Consistency Tracker  
-📅 **Started:** 2025  
+📅 **Started:** 2026  
 🔥 **Goal:** 365 days of coding  
 
 > _"Small steps every day lead to big results."_
