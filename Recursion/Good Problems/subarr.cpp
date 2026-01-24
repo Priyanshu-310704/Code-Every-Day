@@ -2,18 +2,31 @@
 using namespace std;
 #include<vector>
 // #include<climits>
-void subArray(int arr[],int &n,vector<int> v,int idx){
-    if(idx==n){
-        for(int i=0;i<v.size();i++){
-            cout<<v[i]<<" ";
-        }cout<<endl;
+// void subArray(int arr[],int &n,vector<int> v,int idx){
+//     if(idx==n){
+//         for(int i=0;i<v.size();i++){
+//             cout<<v[i]<<" ";
+//         }cout<<endl;
+//         return;
+//     }
+//     subArray(arr,n,v,idx+1);
+//     if(v.size()==0||v[v.size()-1]==arr[idx-1]){
+//         v.push_back(arr[idx]);
+//         subArray(arr,n,v,idx+1);
+//     }
+// }
+void subArray(int arr[],int &n,int start,int end){
+    if(n==start){
         return;
     }
-    subArray(arr,n,v,idx+1);
-    if(v.size()==0||v[v.size()-1]==arr[idx-1]){
-        v.push_back(arr[idx]);
-        subArray(arr,n,v,idx+1);
+    if(end==n){
+        subArray(arr,n,start+1,start+1);
+        return;
     }
+    for(int i=start;i<=end;i++){
+        cout<<arr[i]<<" ";
+    }cout<<endl;
+    subArray(arr,n,start,end+1);
 }
 int main(){
     int arr[]={1,2,3,4};
@@ -32,6 +45,7 @@ int main(){
     //     }
     // }
     // cout<<"sum : "<<sum;
-    subArray(arr,n,{},0);
+    // subArray(arr,n,{},0);
+    subArray(arr,n,0,0);
 
 }
