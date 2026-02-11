@@ -68,5 +68,4 @@ int main(){
     bfs(start,end);
     vector<int>dist(v,INT_MAX);
     cout<<countSmallestPath(start,end,dist);
-    
 }
